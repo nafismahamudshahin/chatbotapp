@@ -28,8 +28,13 @@
             font-size: 20px;
         }
         #ans-show-area{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
             overflow-y: scroll;
             height: 450px;
+            padding: 10px 10px 0px 10px;
+            border: 3px solid green;
         }
         input{
             width: 100%;
@@ -57,6 +62,20 @@
             background-color: rgb(37, 223, 13);
             font-weight: 800;
         }
+        .user-message{
+            display: flex;
+            width: 60%;
+            align-items: center;
+            gap: 10px;
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: rgb(199, 205, 209);
+        }
+        .user-image{
+            width: 40px;
+            margin-bottom: -8px;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -70,11 +89,18 @@
                 <h3>ChatBot App</h3>
             </div>
             <div id="ans-show-area">
-
+                <!-- <div class="user-message-container">
+                    <span class="user-message">
+                        <div>
+                            <img class="user-image" src="nafismahamudshahin.png" alt="">
+                        </div>
+                        </h5>what is your name?</h5>
+                    </span>
+                </div> -->
             </div>
             <div id="chat-box-area">
-                <input placeholder="Message ChatBot:" type="search">
-                <button class="btn">Chat</button>
+                <input id="message" placeholder="Message ChatBot:" type="search">
+                <button onclick="userMessage()" class="btn">Chat</button>
             </div>
            </div>
         </section>
