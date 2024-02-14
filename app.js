@@ -16,19 +16,18 @@ const displayAnswer =(ansObj)=>{
     const userDiv = document.createElement("div");
     userDiv.classList.add('user-message-container')
     userDiv.innerHTML=`
-    <div class="user-message-container">
+    
         <span class="user-message">
             <div>
                 <img class="user-image" src="nafismahamudshahin.png" alt="">
             </div>
             </h5>${messagevalue.value}</h5>
         </span>
-    </div>
     `;
     const answerDiv = document.createElement("div");
     answerDiv.innerHTML=`
-    <div class="user-message-container">
-        <span class="user-message">
+    <div class="answer-container">
+        <span class="message-reply">
             <div>
                 <img class="user-image" src="chatbot.jpg" alt="">
             </div>
